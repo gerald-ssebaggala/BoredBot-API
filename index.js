@@ -2,10 +2,7 @@ const randomIdea = document.querySelector(".bot--url");
 const button = document.querySelector("button");
 const courseDisplayer = document.querySelector(".visit-course");
 const educationFee = document.querySelector(".course--price");
-const footer = document.querySelector(".footer")
-
-
-// console.log(footer)
+const footer = document.querySelector(".footer");
 
 // fetch("https://apis.scrimba.com/bored/api/activity")
 
