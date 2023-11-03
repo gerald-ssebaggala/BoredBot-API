@@ -4,8 +4,10 @@ const button = document.querySelector("button");
 const education = document.querySelector(".visit-course");
 const educationLink = document.querySelector(".course--link");
 const educationFee = document.querySelector(".course--price");
+const footer = document.querySelector(".footer")
 
-console.log(educationFee, educationLink)
+
+console.log(educationFee, footer)
 
 // fetch("https://apis.scrimba.com/bored/api/activity")
 
@@ -21,7 +23,7 @@ button.addEventListener("click", () => {
                 education.style.display = "none";
             } else {
                 education.style.display = "block";
-                education.style.width = "50%";
+                education.style.width = "90%";
                 educationLink.innerHTML = `
                                                 Link : <a target="-blank" href="${data.link}" class="course-link">
                                                     ${data.link}
