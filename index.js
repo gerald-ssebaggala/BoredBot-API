@@ -1,13 +1,11 @@
 const randomIdea = document.querySelector(".bot--url");
-const image = document.querySelector(".card--img");
 const button = document.querySelector("button");
-const education = document.querySelector(".visit-course");
-const educationLink = document.querySelector(".course--link");
+const courseDisplayer = document.querySelector(".visit-course");
 const educationFee = document.querySelector(".course--price");
 const footer = document.querySelector(".footer")
 
 
-console.log(educationFee, footer)
+// console.log(footer)
 
 // fetch("https://apis.scrimba.com/bored/api/activity")
 
@@ -20,17 +18,23 @@ button.addEventListener("click", () => {
             randomIdea.textContent = data.activity;
 
             if(data.link === ""){
-                education.style.display = "none";
+                courseDisplayer.style.display = "none";
             } else {
-                education.style.display = "block";
-                education.style.width = "90%";
-                educationLink.innerHTML = `
-                                                Link : <a target="-blank" href="${data.link}" class="course-link">
+                courseDisplayer.style.display = "block";
+                courseDisplayer.style.padding = ".5em";
+                courseDisplayer.innerHTML = `
+                                                <p>
+                                                    Link : 
+                                                    <a target="-blank" href="${data.link}" class="course-link">
                                                     ${data.link}
-                                                </a>`;
-                educationFee.innerHTML = `Price : $ ${data.price}`;
+                                                    </a>
+                                                </p>
+
+                                                <p>
+                                                    Price : $ 
+                                                    ${data.price}
+                                                </p>
+                                            `;
             }
         })
 })
-
-

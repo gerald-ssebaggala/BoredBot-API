@@ -22,19 +22,24 @@ body {
     background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 450px;
 }
-.bot--title{
-    font-size: 2rem;
-    margin: .8em 0em;
+header, footer, main {
+    width: 100%;
+    text-align: center;
 }
 header, footer {
     height: 15%;
+}
+.bot--title{
+    font-size: 2rem;
+    margin: .8em 0em;
 }
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 70%;
-    margin: 1em 0em 3em;
+    margin: 1em 0em;
+    padding: 1em;
 }
 .task {
     height: 70px;
@@ -57,30 +62,26 @@ button:hover, button:focus {
     border: 1px solid rgb(199, 176, 176);
 }
 .visit-course{
-    /* color: #2c3e50; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: auto;
     font-weight: 600;
-    line-height: 2em;
+    line-height: 1.8em;
+    text-align: center;
     padding: .9em;
-    /* width: 100%; */
     margin: 0 auto;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid blueviolet; */
-    /* height: 100px; */
 }
 .course-link {
     font-style: italic;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
+    display: block;
 }
 footer {
     font-weight: 600;
     background-color: #2c3e50;
-    width: 100%;
     padding: 2em;
-    text-align: center;
 }
 footer p {
     margin: 0em;
