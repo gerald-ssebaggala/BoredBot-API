@@ -1,5 +1,6 @@
 const randomIdea = document.querySelector(".bot--url");
 const button = document.querySelector("button");
+const buttonBlinker = document.querySelector("#fade-icon");
 const courseDisplayer = document.querySelector(".visit-course");
 const educationFee = document.querySelector(".course--price");
 const footer = document.querySelector(".footer");
@@ -7,6 +8,7 @@ const footer = document.querySelector(".footer");
 // fetch("https://apis.scrimba.com/bored/api/activity")
 
 button.addEventListener("click", () => {
+    buttonBlinker.style.display = "none";
     fetch("http://www.boredapi.com/api/activity/")
         .then(response => response.json())
         .then(data => {
